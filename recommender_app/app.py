@@ -15,7 +15,6 @@ def create_tf_serving_json(data):
 
 def score_model(dataset):
   url = 'url in the copied code'
-  #dapi8ba695544517ef80a1502e418e36821d
   headers = {'Authorization': f'Bearer {os.environ.get("DATABRICKS_TOKEN")'}
   data_json = dataset.to_dict(orient='split') if isinstance(dataset, pd.DataFrame) else create_tf_serving_json(dataset)
   response = requests.request(method='POST', headers=headers, url=url, json=data_json)
