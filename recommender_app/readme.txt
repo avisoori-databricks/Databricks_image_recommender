@@ -5,4 +5,4 @@ Once a similarity model has been deployed for real-time inference using MLflow s
 - Then run: docker run -p 8501:8501 app:latest
 - Then test out your app at: http://localhost:8501/
 
-This process is detailed nicely in the blog by Maël Fabien at: https://maelfabien.github.io/project/Streamlit/#dockerfile
+This process is nicely detailed in the blog by Maël Fabien at: https://maelfabien.github.io/project/Streamlit/#dockerfile
